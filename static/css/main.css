@@ -57,3 +57,33 @@ form {
   bottom: 0px;
   left: 0px;
 } */
+
+.animation {
+  position: relative;
+  animation-name: move;
+  animation-duration: 4s;
+}
+
+@keyframes move {
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+}
+/*******************************************
+
+ For devices between above 600px
+
+ *******************************************/
+
+ @media print and (min-width: 300px) {
+   .card-subtitle {
+     font-size: 40px;
+     color: red;
+   }
+
+   h4 {
+     font-size: 50px;
+   }
+ }
